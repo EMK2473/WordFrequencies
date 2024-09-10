@@ -4,22 +4,24 @@ import java.util.Scanner;
 
 public class WordFrequencies {
 
-   /* Define your method here */
+   public static int getWordFrequency(String[] arrayOfStrings, int arraySize, String searchWord) {
+        int frequency = 0;
+        return frequency;
+   }
 
    public static void main(String[] args) {
-      /* Type your code here. */
-
-      Scanner scnr = new Scanner(System.in);
-        String inputLine = scnr.nextLine();
-        String[] stringArray = inputLine.split(" ");
-        int arraySize = stringArray.length;
-
-        System.out.print("Array of strings: ");
-        // for each syntax
-        for(String s: stringArray) {
-            System.out.print(s + " \n");
-        }
-        System.out. println("Array size: " + arraySize);
-      scnr.close();
+    Scanner scnr = new Scanner(System.in);
+    int arraySize = scnr.nextInt();
+    String inputWords = scnr.nextLine();
+    String[] stringArray = inputWords.split(" ");
+    
+    for(String s : stringArray){
+       if(s.length() > 0){
+          System.out.print(s + " \n");
+          }
+       }
+    
+    System.out.println(arraySize);
+    scnr.close();
    }
 }
