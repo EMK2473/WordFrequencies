@@ -6,7 +6,12 @@ public class WordFrequencies {
 
    public static int getWordFrequency(String[] arrayOfStrings, int arraySize, String searchWord) {
         int frequency = 0;
-        return frequency;
+        for(String s: arrayOfStrings) {
+            if (s.equalsIgnoreCase(searchWord)) {
+               frequency++;
+            }
+            }
+            return frequency;
    }
 
    public static void main(String[] args) {
@@ -17,7 +22,9 @@ public class WordFrequencies {
     
     for(String s : stringArray){
        if(s.length() > 0){
-          System.out.print(s + " \n");
+        String searchWord = s;
+        int freq = getWordFrequency(stringArray, arraySize, searchWord);
+        System.out.print(s + " " + freq + "\n");
           }
        }
     
