@@ -27,8 +27,6 @@ public class WordFrequencies {
         System.out.print(s + " " + freq + "\n");
           }
        }
-    
-    System.out.println(arraySize);
     scnr.close();
    }
 }
